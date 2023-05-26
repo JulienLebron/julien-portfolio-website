@@ -266,7 +266,7 @@ input {
 
 /*===== Home Section =====*/
 .home {
-    background: url('../img/home-bg.jpg');
+    background: url('../img/about/test3.png');
     background-size: cover;
     background-position: center center;
     height: 100vh;
@@ -318,6 +318,7 @@ input {
 }
 
 .home__img {
+    clip-path: ellipse(33% 50%);
     display: none;
 }
 
@@ -1480,7 +1481,7 @@ textarea.input {
 
     .home__img {
         display: block;
-        width: 250px;
+        width: 300px;
         justify-self: center;
     }
 
