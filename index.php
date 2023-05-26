@@ -1,23 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julien Lebron Portfolio</title>
     <!--========== UNICONS ==========-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-
+    
     <!--========== BOXICONS ==========-->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-
+    
     <!--========== SWIPER CSS ==========-->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-
+    
     <!--========== MAIN CSS ==========-->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <title>Responsive portfolio website - Crypticalcoder</title>
+    
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="/favicon.ico">
 </head>
 
 <body>
