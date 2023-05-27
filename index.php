@@ -41,7 +41,7 @@
                             <a href="#about" class="nav__link">À Propos</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#skills" class="nav__link">Compétences</a>
+                            <a href="#skills" class="nav__link">Skills</a>
                         </li>
                         <li class="nav__item">
                             <a href="#work" class="nav__link">Portfolio</a>
@@ -134,7 +134,7 @@
             <h2 data-heading="Introduction" class="section__title">À Propos De Moi</h2>
 
             <div class="about__container container grid">
-                <img src="assets/img//about/about-normal.png" alt="" class="about__img">
+                <img src="assets/img/about/about-normal.png" alt="" class="about__img">
 
                 <div class="about__data">
                     <h3 class="about__heading">Bonjour, Je suis Julien, Basé à Bruxelles</h3>
@@ -157,7 +157,7 @@
                         </div>
                     </div>
                     <a href="#contact" class="button"><i class="uil uil-navigator button__icon"></i>
-                        Contacter Moi
+                        Contactez-Moi
                     </a>
                 </div>
             </div>
@@ -252,7 +252,7 @@
                         <i class="uil uil-brackets-curly skills__icon"></i>
 
                         <div>
-                            <h1 class="skills__title">Développeur Frontend</h1>
+                            <h3 class="skills__title">Développeur Frontend</h3>
                             <span class="skills__subtitle">Plus de 3 ans</span>
                         </div>
 
@@ -263,7 +263,7 @@
                         <i class="uil uil-swatchbook skills__icon"></i>
 
                         <div>
-                            <h1 class="skills__title">Développeur Backend</h1>
+                            <h3 class="skills__title">Développeur Backend</h3>
                             <span class="skills__subtitle">Plus de 3 ans</span>
                         </div>
 
@@ -274,7 +274,7 @@
                         <i class="uil uil-server-network skills__icon"></i>
 
                         <div>
-                            <h1 class="skills__title">Formateur Full Stack</h1>
+                            <h3 class="skills__title">Formateur Full Stack</h3>
                             <span class="skills__subtitle">Plus de 2 ans</span>
                         </div>
 
@@ -527,7 +527,7 @@
                 </div>
 
                 <div class="work__card mix web">
-                    <img src="assets/img/works/The Fiasco.png" alt="" class="work__img">
+                    <img src="assets/img/works/TheFiasco.png" alt="" class="work__img">
                     <h3 class="work__title">The Fiasco</h3>
                     <span class="work__button">Demo
                         <i class="uil uil-arrow-right work__button-icon"></i>
@@ -545,7 +545,7 @@
                 </div>
 
                 <div class="work__card mix web">
-                    <img src="assets/img/works/Jane Doe Portfolio.png" alt="" class="work__img">
+                    <img src="assets/img/works/JaneDoe.png" alt="" class="work__img">
                     <h3 class="work__title">Jane Doe Portfolio</h3>
                     <span class="work__button">Demo
                         <i class="uil uil-arrow-right work__button-icon"></i>
@@ -1143,26 +1143,26 @@
                 <div class="contact__content">
                     <form action="contact.php" class="contact__form" method="POST">
                         <div class="input__container">
-                            <input type="text" class="input" name="surname">
-                            <label for="">Nom / Prénom</label>
+                            <input type="text" class="input" name="surname" id="surname">
+                            <label for="surname">Nom / Prénom</label>
                             <span>Nom / Prénom</span>
                         </div>
                         <div class="input__container">
-                            <input type="email" class="input" name="email">
-                            <label for="">E-mail</label>
+                            <input type="email" class="input" name="email" id="email">
+                            <label for="email">E-mail</label>
                             <span>E-mail</span>
                         </div>
                         <div class="input__container">
-                            <input type="tel" class="input" name="phone">
-                            <label for="">Téléphone</label>
+                            <input type="tel" class="input" name="phone" id="phone">
+                            <label for="phone">Téléphone</label>
                             <span>Télephone</span>
                         </div>
                         <div class="input__container textarea">
-                            <textarea name="message" id="" class="input"></textarea>
-                            <label for="">Message</label>
+                            <textarea name="message" id="message" class="input"></textarea>
+                            <label for="message">Message</label>
                             <span>Message</span>
                         </div>
-                        <button type="submit" class="button"><i class="uil uil-navigator button__icon"></i>
+                        <button type="submit" target="_blank" class="button"><i class="uil uil-navigator button__icon"></i>
                             Envoyer
                         </button>
                     </form>
@@ -1176,7 +1176,7 @@
             <div class="footer__bg">
                 <div class="footer__container container grid">
                     <div>
-                        <h1 class="footer__title">Julien Lebron</h1>
+                        <h2 class="footer__title">Julien Lebron</h2>
                         <span class="footer__subtitle">Développeur Full Stack et Formateur</span>
                     </div>
 
@@ -1193,6 +1193,9 @@
                     </ul>
 
                     <div class="footer__socials">
+                        <a href="#home" class="footer__social">
+                            <i class="uil uil-estate"></i>
+                        </a>
                         <a href="https://github.com/JulienLebron" target="_blank" class="footer__social">
                             <i class="uil uil-github"></i>
                         </a>
