@@ -1,3 +1,10 @@
+<?php 
+    if(isset($_GET['portfolio']))
+    {
+        setcookie('portfolio', 'true', time() + 365*24*3600);
+        header('Location:./');
+    }
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -8,18 +15,27 @@
     <title>Julien Lebron Portfolio</title>
     <!--========== UNICONS ==========-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-    
+
     <!--========== BOXICONS ==========-->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    
+
     <!--========== SWIPER CSS ==========-->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-    
+
     <!--========== MAIN CSS ==========-->
     <link rel="stylesheet" href="assets/css/style.css">
-    
+
     <link rel="icon" type="image/x-icon" sizes="32x32" href="/favicon.ico">
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X9TP2TETV7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-X9TP2TETV7');
+</script>
 
 <body>
     <!--========== SIDEBAR ==========-->
@@ -81,7 +97,8 @@
                         <a href="https://www.instagram.com/julien_lebron/" target="_blank" class="home__social-link">
                             <i class="uil uil-instagram"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/julien-lebron-24b154162/" target="_blank" class="home__social-link">
+                        <a href="https://www.linkedin.com/in/julien-lebron-24b154162/" target="_blank"
+                            class="home__social-link">
                             <i class="uil uil-linkedin"></i>
                         </a>
                     </div>
@@ -92,7 +109,8 @@
                 <div class="home__data">
                     <h1 class="home__title">Julien Lebron</h1>
                     <h3 class="home__subtitle">Développeur Full Stack et Formateur</h3>
-                    <p class="home__description">Expérimenté dans la conception et le développement de sites Web, produisant un travail de qualité</p>
+                    <p class="home__description">Expérimenté dans la conception et le développement de sites Web,
+                        produisant un travail de qualité</p>
                     <a href="#about" class="button"><i class="uil uil-user button__icon"></i>
                         À Propos De Moi</a>
                 </div>
@@ -138,7 +156,9 @@
 
                 <div class="about__data">
                     <h3 class="about__heading">Bonjour, Je suis Julien, Basé à Bruxelles</h3>
-                    <p class="about__description">Développeur Web avec des connaissances approfondies et des années d'expérience, travaillant dans les technologies du web et la formation au développement web, délivrant un travail de qualité.</p>
+                    <p class="about__description">Développeur Web avec des connaissances approfondies et des années
+                        d'expérience, travaillant dans les technologies du web et la formation au développement web,
+                        délivrant un travail de qualité.</p>
                     <div class="about__info grid">
                         <div class="about__box">
                             <i class="uil uil-award about__icon"></i>
@@ -462,7 +482,8 @@
                     </span>
                     <div class="portfolio__item-details">
                         <h3 class="details__title">Développement Front & Back</h3>
-                        <p class="details__description">L'Hôtel K est un établissement 5 étoiles sur Paris. Projet réalisé dans le cadre de mon cours Symfony.</p>
+                        <p class="details__description">L'Hôtel K est un établissement 5 étoiles sur Paris. Projet
+                            réalisé dans le cadre de mon cours Symfony.</p>
                         <ul class="details__info">
                             <li>Crée le - <span>25 avril 2023</span></li>
                             <li>Technologies - <span>Symfony</span></li>
@@ -480,7 +501,8 @@
                     </span>
                     <div class="portfolio__item-details">
                         <h3 class="details__title">Développement Front & Back</h3>
-                        <p class="details__description">MyShop est un boutique en ligne qui propose la vente de sneakers. Projet réalisé dans le cadre de mon cours Symfony.</p>
+                        <p class="details__description">MyShop est un boutique en ligne qui propose la vente de
+                            sneakers. Projet réalisé dans le cadre de mon cours Symfony.</p>
                         <ul class="details__info">
                             <li>Crée le - <span>5 mars 2023</span></li>
                             <li>Technologies - <span>Symfony</span></li>
@@ -498,7 +520,8 @@
                     </span>
                     <div class="portfolio__item-details">
                         <h3 class="details__title">Développement Front & Back</h3>
-                        <p class="details__description">Best Cars est une société proposant la location de véhicules à ses internautes. Projet réalisé dans le cadre de mon cours Symfony.</p>
+                        <p class="details__description">Best Cars est une société proposant la location de véhicules à
+                            ses internautes. Projet réalisé dans le cadre de mon cours Symfony.</p>
                         <ul class="details__info">
                             <li>Crée le - <span>10 janv 2023</span></li>
                             <li>Technologies - <span>Symfony</span></li>
@@ -516,7 +539,8 @@
                     </span>
                     <div class="portfolio__item-details">
                         <h3 class="details__title">Développement Front & Back</h3>
-                        <p class="details__description">Game One est un site d'actualité PC et Jeux Vidéo. Projet réalisé dans le cadre de mon cours PHP.</p>
+                        <p class="details__description">Game One est un site d'actualité PC et Jeux Vidéo. Projet
+                            réalisé dans le cadre de mon cours PHP.</p>
                         <ul class="details__info">
                             <li>Crée le - <span>20 décembre 2022</span></li>
                             <li>Technologies - <span>PHP</span></li>
@@ -534,7 +558,8 @@
                     </span>
                     <div class="portfolio__item-details">
                         <h3 class="details__title">Développement Frontend</h3>
-                        <p class="details__description">Site Vitrine du restaurant The Fiasco. Projet réalisé dans le cadre de mon cours HTML - CSS</p>
+                        <p class="details__description">Site Vitrine du restaurant The Fiasco. Projet réalisé dans le
+                            cadre de mon cours HTML - CSS</p>
                         <ul class="details__info">
                             <li>Created - <span>20 juin 2021</span></li>
                             <li>Technologies - <span>HTML - CSS</span></li>
@@ -552,7 +577,8 @@
                     </span>
                     <div class="portfolio__item-details">
                         <h3 class="details__title">Développement Frontend</h3>
-                        <p class="details__description">Portfolio de Jane Doe. Projet réalisé dans le cadre de mon cours HTML - CSS</p>
+                        <p class="details__description">Portfolio de Jane Doe. Projet réalisé dans le cadre de mon cours
+                            HTML - CSS</p>
                         <ul class="details__info">
                             <li>Crée le - <span>10 avril 2021</span></li>
                             <li>Technologies - <span>HTML - CSS</span></li>
@@ -601,137 +627,141 @@
                         <h3 class="services__title">Développement <br> Web</h3>
                     </div>
 
-                        <span class="services__button">
-                            View More <i class="uil uil-arrow-right services__button-icon"></i>
-                        </span>
+                    <span class="services__button">
+                        View More <i class="uil uil-arrow-right services__button-icon"></i>
+                    </span>
 
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <i class="uil uil-times services__modal-close"></i>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class="uil uil-times services__modal-close"></i>
 
-                                <h3 class="services__modal-title">Développement Web</h3>
-                                <p class="services__modal-description">Expérience de plus de 3 ans dans la prestation de services de qualité supérieure aux clients et aux entreprises.</p>
+                            <h3 class="services__modal-title">Développement Web</h3>
+                            <p class="services__modal-description">Expérience de plus de 3 ans dans la prestation de
+                                services de qualité supérieure aux clients et aux entreprises.</p>
 
-                                <ul class="services__modal-services grid">
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Site vitrine, corporate, évènementiel,
-                                            e-commerce, intranet, application mobile.</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Des intégrations HTML / CSS
-                                            respectueuses des standards du Web.</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Des outils adaptés à votre coeur de métier,
-                                            applications & solutions personnalisées.</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Affichage sémantique des informations,
-                                            des pages propres pour un référencement optimal.</p>
-                                    </li>
-                                </ul>    
-                            </div>
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Site vitrine, corporate, évènementiel,
+                                        e-commerce, intranet, application mobile.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Des intégrations HTML / CSS
+                                        respectueuses des standards du Web.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Des outils adaptés à votre coeur de métier,
+                                        applications & solutions personnalisées.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Affichage sémantique des informations,
+                                        des pages propres pour un référencement optimal.</p>
+                                </li>
+                            </ul>
                         </div>
+                    </div>
                 </div>
-                
+
                 <div class="services__content">
                     <div>
                         <i class="uil uil-arrow services__icon"></i>
                         <h3 class="services__title">Conception Graphique</h3>
                     </div>
-                        
-                        <span class="services__button">
-                            View More <i class="uil uil-arrow-right services__button-icon"></i>
-                        </span>
 
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <i class="uil uil-times services__modal-close"></i>
+                    <span class="services__button">
+                        View More <i class="uil uil-arrow-right services__button-icon"></i>
+                    </span>
 
-                                <h3 class="services__modal-title">Conception Graphique & WebDesign</h3>
-                                <p class="services__modal-description">Expérience de plus de 3 ans dans la prestation de services de qualité supérieure aux clients et aux entreprises.</p>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class="uil uil-times services__modal-close"></i>
 
-                                <ul class="services__modal-services grid">
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Logos, templates Web, plaquettes publicitaires,
-                                            cartes de visite, newsletters...</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Des animations de contenu non intrusives
-                                            pour embellir votre projet.</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Outils spécifiques au bon fonctionnement
-                                            de votre entreprise.</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Compatible tous supports, tablette & application mobile.</p>
-                                    </li>
-                                </ul>    
-                            </div>
+                            <h3 class="services__modal-title">Conception Graphique & WebDesign</h3>
+                            <p class="services__modal-description">Expérience de plus de 3 ans dans la prestation de
+                                services de qualité supérieure aux clients et aux entreprises.</p>
+
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Logos, templates Web, plaquettes publicitaires,
+                                        cartes de visite, newsletters...</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Des animations de contenu non intrusives
+                                        pour embellir votre projet.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Outils spécifiques au bon fonctionnement
+                                        de votre entreprise.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Compatible tous supports, tablette & application
+                                        mobile.</p>
+                                </li>
+                            </ul>
                         </div>
+                    </div>
                 </div>
-                
+
                 <div class="services__content">
                     <div>
                         <i class="uil uil-edit services__icon"></i>
                         <h3 class="services__title">Formation <br> Développeur</h3>
                     </div>
-                        
-                        <span class="services__button">
-                            View More <i class="uil uil-arrow-right services__button-icon"></i>
-                        </span>
 
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <i class="uil uil-times services__modal-close"></i>
+                    <span class="services__button">
+                        View More <i class="uil uil-arrow-right services__button-icon"></i>
+                    </span>
 
-                                <h3 class="services__modal-title">Formateur en Développement Web</h3>
-                                <p class="services__modal-description">Expérience de plus de 3 ans dans la prestation de formations de qualité supérieure aux étudiants.</p>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class="uil uil-times services__modal-close"></i>
 
-                                <ul class="services__modal-services grid">
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">HTML / CSS</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Bootstrap</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">JavaScript</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">MySQL</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">PHP</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Symfony</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Wordpress</p>
-                                    </li>
-                                </ul>    
-                            </div>
+                            <h3 class="services__modal-title">Formateur en Développement Web</h3>
+                            <p class="services__modal-description">Expérience de plus de 3 ans dans la prestation de
+                                formations de qualité supérieure aux étudiants.</p>
+
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">HTML / CSS</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Bootstrap</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">JavaScript</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">MySQL</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">PHP</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Symfony</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Wordpress</p>
+                                </li>
+                            </ul>
                         </div>
+                    </div>
                 </div>
             </div>
-                
+
         </section>
 
         <!--===== Testimonials =====-->
@@ -744,7 +774,10 @@
                         <div class="testimonial__quote">
                             <i class="bx bxs-quote-alt-left"></i>
                         </div>
-                        <p class="testimonial__description">Julien était mon formateur PHP chez Doranco ,il a vraiment des solides compétences en plusieurs langages, il a une grande expérience et capacité à nous expliquer les informations.... il était patient et à l'écoute pour répondre à notre questions.
+                        <p class="testimonial__description">Julien était mon formateur PHP chez Doranco ,il a vraiment
+                            des solides compétences en plusieurs langages, il a une grande expérience et capacité à nous
+                            expliquer les informations.... il était patient et à l'écoute pour répondre à notre
+                            questions.
                             merci Julien pour m'aider à réaliser mon première projet en php.</p>
                         <h3 class="testimonial__date">7 dévrier 2023</h3>
                         <div class="testimonial__profile">
@@ -761,10 +794,14 @@
                         <div class="testimonial__quote">
                             <i class="bx bxs-quote-alt-left"></i>
                         </div>
-                        <p class="testimonial__description">Développeur très compétent. Je l'ai constaté notamment en assistant à des cours PHP qu'il a donné. Julien a également des soft skills intéressants pour le travail en équipe tels que l'écoute active, sa faculté d'adaptation, son dynamisme et sa sociabilité. Je recommande Julien lebron.</p>
+                        <p class="testimonial__description">Développeur très compétent. Je l'ai constaté notamment en
+                            assistant à des cours PHP qu'il a donné. Julien a également des soft skills intéressants
+                            pour le travail en équipe tels que l'écoute active, sa faculté d'adaptation, son dynamisme
+                            et sa sociabilité. Je recommande Julien lebron.</p>
                         <h3 class="testimonial__date">8 janvier 2023</h3>
                         <div class="testimonial__profile">
-                            <img src="assets/img/testimonials/pierre-alexandre.jpg" alt="" class="testimonial__profile-img">
+                            <img src="assets/img/testimonials/pierre-alexandre.jpg" alt=""
+                                class="testimonial__profile-img">
 
                             <div class="testimonial__profile-data">
                                 <span class="testimonial__profile-name">Pierre-Alexandre Detollenaere</span>
@@ -777,7 +814,9 @@
                         <div class="testimonial__quote">
                             <i class="bx bxs-quote-alt-left"></i>
                         </div>
-                        <p class="testimonial__description">Julien est l'un de mes formateurs préférés. Il a toutes les qualités d'un bon formateur, il est calme, patient, organisé, prend le temps d'expliquer, très serviable....</p>
+                        <p class="testimonial__description">Julien est l'un de mes formateurs préférés. Il a toutes les
+                            qualités d'un bon formateur, il est calme, patient, organisé, prend le temps d'expliquer,
+                            très serviable....</p>
                         <h3 class="testimonial__date">March 27. 2020</h3>
                         <div class="testimonial__profile">
                             <img src="assets/img/testimonials/imane.jpg" alt="" class="testimonial__profile-img">
@@ -793,7 +832,9 @@
                         <div class="testimonial__quote">
                             <i class="bx bxs-quote-alt-left"></i>
                         </div>
-                        <p class="testimonial__description">Je recommande Julien, il enseigne très bien, merci à lui pour ses explications et son temps, il est toujours à l'écoute et prêt à aider, je le remercie.</p>
+                        <p class="testimonial__description">Je recommande Julien, il enseigne très bien, merci à lui
+                            pour ses explications et son temps, il est toujours à l'écoute et prêt à aider, je le
+                            remercie.</p>
                         <h3 class="testimonial__date">7 février 2023</h3>
                         <div class="testimonial__profile">
                             <img src="assets/img/testimonials/sidi.jpg" alt="" class="testimonial__profile-img">
@@ -809,8 +850,11 @@
                         <div class="testimonial__quote">
                             <i class="bx bxs-quote-alt-left"></i>
                         </div>
-                        <p class="testimonial__description">J'ai eu la chance d'avoir Julien comme formateur en 2022 sur PHP lors mes cours pour devenir Développeur d'applications multimédias. Julien est un formateur dédié, pédagogue et talentueux.
-                            Son approche de l'enseignement des langages informatique et son aisance lors de l'enseignement reflète sa bonne connaissance du domaine. Vivement recommandé !</p>
+                        <p class="testimonial__description">J'ai eu la chance d'avoir Julien comme formateur en 2022 sur
+                            PHP lors mes cours pour devenir Développeur d'applications multimédias. Julien est un
+                            formateur dédié, pédagogue et talentueux.
+                            Son approche de l'enseignement des langages informatique et son aisance lors de
+                            l'enseignement reflète sa bonne connaissance du domaine. Vivement recommandé !</p>
                         <h3 class="testimonial__date">6 avril 2022</h3>
                         <div class="testimonial__profile">
                             <img src="assets/img/testimonials/corentin.jpg" alt="" class="testimonial__profile-img">
@@ -835,78 +879,80 @@
                     <div>
                         <i class="uil uil-wordpress-simple services__icon"></i>
                         <h3 class="services__title">Site Vitrine <br> Standard</h3>
-                        <p class="prices__description"><b>Développé sous WORDPRESS</b><br>(Outil de gestion de contenu)</p>
+                        <p class="prices__description"><b>Développé sous WORDPRESS</b><br>(Outil de gestion de contenu)
+                        </p>
                         <p class="prices__price">A partir de <b>999€</b></p>
                     </div>
 
-                        <span class="services__button">
-                            Voir plus <i class="uil uil-arrow-right services__button-icon"></i>
-                        </span>
+                    <span class="services__button">
+                        Voir plus <i class="uil uil-arrow-right services__button-icon"></i>
+                    </span>
 
-                        <div class="services__modal">
-                            <div class="services__modal-content prices__modal-content">
-                                <i class="uil uil-times services__modal-close"></i>
+                    <div class="services__modal">
+                        <div class="services__modal-content prices__modal-content">
+                            <i class="uil uil-times services__modal-close"></i>
 
-                                <ul class="services__modal-services grid">
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Charte graphique à partir d'une maquette pré-définie</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Sélection d'une palette de couleur</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Domaine + hébergement
-                                            + e-mail pendant 12 mois</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Interface administrateur
-                                            STANDARD</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Site responsive <br>
-                                            (adapté tous supports)</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Mise en place du contenu <br>
-                                            (textes & images)</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Formulaire de contact</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Liens de partage sur les
-                                            réseaux sociaux</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Optimisation
-                                            du référencement</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Statistiques de visite</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Mise en ligne du site</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Formation utilisation du site</p>
-                                    </li>
-                                </ul>    
-                            </div>
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Charte graphique à partir d'une maquette pré-définie
+                                    </p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Sélection d'une palette de couleur</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Domaine + hébergement
+                                        + e-mail pendant 12 mois</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Interface administrateur
+                                        STANDARD</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Site responsive <br>
+                                        (adapté tous supports)</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Mise en place du contenu <br>
+                                        (textes & images)</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Formulaire de contact</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Liens de partage sur les
+                                        réseaux sociaux</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Optimisation
+                                        du référencement</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Statistiques de visite</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Mise en ligne du site</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Formation utilisation du site</p>
+                                </li>
+                            </ul>
                         </div>
+                    </div>
                 </div>
-                
+
                 <div class="services__content">
                     <div>
                         <i class="uil uil-arrow services__icon"></i>
@@ -914,144 +960,145 @@
                         <p class="prices__description"><b>Développé SUR-MESURE</b> <br>(Codage à la main)</p>
                         <p class="prices__price">A partir de <b>1500€</b></p>
                     </div>
-                        
-                        <span class="services__button">
-                            Voir plus <i class="uil uil-arrow-right services__button-icon"></i>
-                        </span>
 
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <i class="uil uil-times services__modal-close"></i>
+                    <span class="services__button">
+                        Voir plus <i class="uil uil-arrow-right services__button-icon"></i>
+                    </span>
 
-                                <ul class="services__modal-services grid">
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Création charte graphique personnalisée</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Proposition de logo</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Domaine + hébergement
-                                            + e-mail pendant 12 mois</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Interface administrateur
-                                            SUR-MESURE</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Site responsive
-                                            (adapté tous supports)</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Mise en place du contenu
-                                            (textes & images)</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Formulaire de contact & Map</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Liens de partage sur les
-                                            réseaux sociaux</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Optimisation du référencement
-                                            et des performances</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Statistiques de visite</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Mise en ligne du site</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Formation utilisation du site</p>
-                                    </li>
-                                </ul>    
-                            </div>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class="uil uil-times services__modal-close"></i>
+
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Création charte graphique personnalisée</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Proposition de logo</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Domaine + hébergement
+                                        + e-mail pendant 12 mois</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Interface administrateur
+                                        SUR-MESURE</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Site responsive
+                                        (adapté tous supports)</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Mise en place du contenu
+                                        (textes & images)</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Formulaire de contact & Map</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Liens de partage sur les
+                                        réseaux sociaux</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Optimisation du référencement
+                                        et des performances</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Statistiques de visite</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Mise en ligne du site</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Formation utilisation du site</p>
+                                </li>
+                            </ul>
                         </div>
+                    </div>
                 </div>
-                
+
                 <div class="services__content">
                     <div>
                         <i class="uil uil-shopping-cart-alt services__icon"></i>
                         <h3 class="services__title">Plateforme E-commerce</h3>
-                        <p class="prices__description"><b>PRESTASHOP</b> ou <b>WORDPRESS</b> <br>(Outil de gestion de contenu)</p>
+                        <p class="prices__description"><b>PRESTASHOP</b> ou <b>WORDPRESS</b> <br>(Outil de gestion de
+                            contenu)</p>
                         <p class="prices__price">A partir de <b>2500€</b> </p>
                     </div>
-                        
-                        <span class="services__button">
-                            View More <i class="uil uil-arrow-right services__button-icon"></i>
-                        </span>
 
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <i class="uil uil-times services__modal-close"></i>
+                    <span class="services__button">
+                        View More <i class="uil uil-arrow-right services__button-icon"></i>
+                    </span>
 
-                                <ul class="services__modal-services grid">
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Création charte graphique personnalisée</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Proposition de logo</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Domaine + hébergement
-                                            + e-mail pendant 12 mois</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Installation & configuration des plugins choisis</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Site responsive
-                                            (adapté tous supports)</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Mise en place du contenu
-                                            (textes & images)</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Formulaire de contact & Map</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Liens de partage sur les
-                                            réseaux sociaux</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Optimisation du référencement
-                                            et des performances</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Mise en ligne du site</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Formation utilisation du site</p>
-                                    </li>
-                                </ul>    
-                            </div>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class="uil uil-times services__modal-close"></i>
+
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Création charte graphique personnalisée</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Proposition de logo</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Domaine + hébergement
+                                        + e-mail pendant 12 mois</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Installation & configuration des plugins choisis</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Site responsive
+                                        (adapté tous supports)</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Mise en place du contenu
+                                        (textes & images)</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Formulaire de contact & Map</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Liens de partage sur les
+                                        réseaux sociaux</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Optimisation du référencement
+                                        et des performances</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Mise en ligne du site</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Formation utilisation du site</p>
+                                </li>
+                            </ul>
                         </div>
+                    </div>
                 </div>
 
                 <div class="services__content">
@@ -1061,54 +1108,55 @@
                         <p class="prices__description"><b>Apprendre à coder</b> <br>(Mission de formation)</p>
                         <p class="prices__price">A partir de <b>250€</b>/Jour </p>
                     </div>
-                        
-                        <span class="services__button">
-                            View More <i class="uil uil-arrow-right services__button-icon"></i>
-                        </span>
 
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <i class="uil uil-times services__modal-close"></i>
+                    <span class="services__button">
+                        View More <i class="uil uil-arrow-right services__button-icon"></i>
+                    </span>
 
-                                <ul class="services__modal-services grid">
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">HTML / CSS</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Bootstrap</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">JavaScript</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">MySQL</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">PHP</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Symfony</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p class="services__modal-info">Wordpress</p>
-                                    </li>
-                                </ul>    
-                            </div>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class="uil uil-times services__modal-close"></i>
+
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">HTML / CSS</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Bootstrap</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">JavaScript</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">MySQL</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">PHP</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Symfony</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Wordpress</p>
+                                </li>
+                            </ul>
                         </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!--===== Contact =====-->
         <section class="contact section" id="contact">
-            <h2 data-heading="Contactez-moi" class="section__title">Une idéé ? Un projet ? N'hésitez pas à demander un devis ! [Gratuit]</h2>
+            <h2 data-heading="Contactez-moi" class="section__title">Une idéé ? Un projet ? N'hésitez pas à demander un
+                devis ! [Gratuit]</h2>
 
             <div class="contact__container container grid">
                 <div class="contact__content">
@@ -1162,7 +1210,8 @@
                             <label for="message">Message</label>
                             <span>Message</span>
                         </div>
-                        <button type="submit" target="_blank" class="button"><i class="uil uil-navigator button__icon"></i>
+                        <button type="submit" target="_blank" class="button"><i
+                                class="uil uil-navigator button__icon"></i>
                             Envoyer
                         </button>
                     </form>
@@ -1171,15 +1220,19 @@
             </div>
         </section>
 
-        <!--===== FOOTER =====-->
-        <footer class="footer">
+
+
+    </div>
+    
+    <!--===== FOOTER =====-->
+    <footer class="footer">
             <div class="footer__bg">
                 <div class="footer__container container grid">
                     <div>
                         <h2 class="footer__title">Julien Lebron</h2>
                         <span class="footer__subtitle">Développeur Full Stack et Formateur</span>
                     </div>
-
+                    
                     <ul class="footer__links">
                         <li>
                             <a href="#services" class="footer__link">Services</a>
@@ -1191,7 +1244,7 @@
                             <a href="#contact" class="footer__link">Contact</a>
                         </li>
                     </ul>
-
+                    
                     <div class="footer__socials">
                         <a href="#home" class="footer__social">
                             <i class="uil uil-estate"></i>
@@ -1202,26 +1255,47 @@
                         <a href="https://www.instagram.com/julien_lebron/" target="_blank" class="footer__social">
                             <i class="uil uil-instagram"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/julien-lebron-24b154162/" target="_blank" class="footer__social">
-                            <i class="uil uil-linkedin"></i>
-                        </a>
+                        <a href="https://www.linkedin.com/in/julien-lebron-24b154162/" target="_blank"
+                        class="footer__social">
+                        <i class="uil uil-linkedin"></i>
+                    </a>
                     </div>
                 </div>
-
+                
                 <p class="footer__copy">&#169; Julien Lebron. Tous Droits Réservés</p>
             </div>
         </footer>
     </main>
+    
+    <!--===== COOKIE =====-->
+    <?php
+        if(!isset($_COOKIE['portfolio']))
+        {
+    ?>
+    <div class="open__cookie" id="cookieBar">
+        <div class="cookie__text">
+            <p>En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de cookies me permettant de
+                réaliser des statistiques de visites.
+                <a rel="nofollow" href="mention.php" class="cookie__info">En savoir plus</a>
+            </p>
+        </div>
+        <div class="cookie__button">
+            <a href="?portfolio" class="button">Accepter</a>
+        </div>
+    </div>
+    <?php
+        }
+    ?>
 
     <!--========== SCROLL UP ==========-->
-
-
+    
+    
     <!--========== MIXITUP FILTER ==========-->
     <script src="assets/js/mixitup.min.js"></script>
-
+    
     <!--========== SWIPER JS ==========-->
     <script src="assets/js/swiper-bundle.min.js"></script>
-
+    
     <!--========== MAIN JS ==========-->
     <script src="assets/js/main.js"></script>
 </body>

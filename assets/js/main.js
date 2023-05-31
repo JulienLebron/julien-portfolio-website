@@ -1,7 +1,10 @@
 /*=============== SHOW SIDEBAR ===============*/
 const navMenu = document.getElementById('sidebar'),
       navToggle = document.getElementById('nav-toggle'),
-      navClose = document.getElementById('nav-close')
+      navClose = document.getElementById('nav-close'),
+      navLinks = document.querySelectorAll('.nav__link')
+
+console.log(navLinks);
 
 /*===== SIDEBAR SHOW =====*/
 /* Validate If Constant Exists */
@@ -18,6 +21,12 @@ if(navClose) {
         navMenu.classList.remove('show-sidebar')
     })
 }
+
+navLinks.forEach(navLink => {
+    navLink.addEventListener('click', () => {
+      navMenu.classList.remove('show-sidebar');
+    });
+  });
 
 /*=============== SKILLS TABS ===============*/
 const tabs = document.querySelectorAll('[data-target]'),

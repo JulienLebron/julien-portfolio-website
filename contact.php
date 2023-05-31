@@ -45,7 +45,6 @@
         die;
     }
 ?>
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -53,15 +52,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julien Lebron Portfolio</title>
     <!--========== UNICONS ==========-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Demande de contact</title>
+
+    <!--========== BOXICONS ==========-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--========== SWIPER CSS ==========-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--========== MAIN CSS ==========-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="/favicon.ico">
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X9TP2TETV7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-X9TP2TETV7');
+</script>
 
 <body>
+    <!--========== SIDEBAR ==========-->
+    <div class="nav__toggle" id="nav-toggle">
+        <i class="uil uil-bars"></i>
+    </div>
+    <aside class="sidebar" id="sidebar">
+        <nav class="nav">
+            <div class="nav__logo">
+                <a href="index.html" class="nav__logo-text">J</a>
+            </div>
+            <div class="nav__menu">
+                <div class="menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.php#home" class="nav__link active-link">Accueil</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="index.php#about" class="nav__link">À Propos</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="index.php#skills" class="nav__link">Skills</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="index.php#work" class="nav__link">Portfolio</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="index.php#services" class="nav__link">Services</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="index.php#prices" class="nav__link">Tarifs</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="index.php#contact" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btn__share">
+                <i class="uil uil-share-alt social__share"></i>
+            </div>
 
-    <main class="contact__page">
+            <div class="nav__close" id="nav-close">
+                <i class="uil uil-times"></i>
+            </div>
+        </nav>
+    </aside>
+    <!--========== MAIN ==========-->
+    <main class="main contact__page">
         <div class="center">
 
             <img src="assets/img/about/about-normal.png" alt="" class="about__img">
@@ -75,11 +138,19 @@
                 echo $error;
             }
             ?>
-                <a href="index.php" class="button"><i class="uil uil-estate button__icon"></i>
-                    Revenir sur le site</a>
         </div>
     </main>
+    <!--========== SCROLL UP ==========-->
 
+
+    <!--========== MIXITUP FILTER ==========-->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!--========== SWIPER JS ==========-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
