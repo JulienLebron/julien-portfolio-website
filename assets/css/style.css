@@ -319,7 +319,7 @@ input {
 }
 
 .home__img {
-    clip-path: ellipse(33% 50%);
+    clip-path: ellipse(40% 50%);
     display: none;
 }
 
@@ -718,10 +718,11 @@ input {
 
 .portfolio__popup-close {
     position: absolute;
-    top: 1.5rem;
+    top: 0.5rem;
     right: 1.5rem;
     color: var(--skin-color);
     cursor: pointer;
+    font-size: 2rem;
 }
 
 .portfolio__popup-img {

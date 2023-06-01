@@ -22,7 +22,7 @@
         content="portfolio, julienlebron, Referencement web, Julien Lebron, Developpeur web, Symfony, Développeur PHP, Mobile, Informatique, chef de projet Digital">
     <meta name="Robots" content="all">
     <meta property="og:title"
-        content="Gael MANZOLA étudiant et développeur web | Java | Mobile à Paris. Création de sites internet responsive.">
+        content="Julien LEBRON développeur web et formateur | PHP | Mobile à Bruxelles. Création de sites internet responsive.">
     <meta property="og:type" content="Portfolio Julien LEBRON développeur web et formateur">
     <meta property="og:url" content="https://www.julien-lebron.com">
     <meta property="og:image" content="https://www.julien-lebron.com/favicon.ico">
@@ -484,15 +484,13 @@
 
             <div class="work__filters">
                 <span class="work__item active-work" data-filter="all">All</span>
-                <span class="work__item" data-filter=".web">HTML - CSS</span>
-                <span class="work__item" data-filter=".git">Git & Github</span>
-                <span class="work__item" data-filter=".app">PHP</span>
-                <span class="work__item" data-filter=".design">Symfony</span>
+                <span class="work__item" data-filter=".frontend">Frontend</span>
+                <span class="work__item" data-filter=".backend">Backend</span>
                 <span class="work__item" data-filter=".nft">NFT</span>
             </div>
 
             <div class="work__container container grid">
-                <div class="work__card mix design">
+                <div class="work__card mix backend">
                     <img src="assets/img/works/hotel-k.png" alt="" class="work__img">
                     <h3 class="work__title">Hôtel K</h3>
                     <span class="work__button">Demo
@@ -506,13 +504,13 @@
                             <li>Crée le - <span>25 avril 2023</span></li>
                             <li>Technologies - <span>Symfony</span></li>
                             <li>Role - <span>Full Stack</span></li>
-                            <li>Voir - <span><a href="https://khotel.julien-lebron.com"
-                                        target="_blank">www.khotel.julien-lebron.com</a></span></li>
+                            <!-- <li>Voir - <span><a href="https://khotel.julien-lebron.com"
+                                        target="_blank">www.khotel.julien-lebron.com</a></span></li> -->
                         </ul>
                     </div>
                 </div>
 
-                <div class="work__card mix design">
+                <div class="work__card mix backend">
                     <img src="assets/img/works/myshop.png" alt="" class="work__img">
                     <h3 class="work__title">MyShop</h3>
                     <span class="work__button">Demo
@@ -531,7 +529,7 @@
                     </div>
                 </div>
 
-                <div class="work__card mix design">
+                <div class="work__card mix backend">
                     <img src="assets/img/works/bestcar.png" alt="" class="work__img">
                     <h3 class="work__title">Best Cars</h3>
                     <span class="work__button">Demo
@@ -550,7 +548,7 @@
                     </div>
                 </div>
 
-                <div class="work__card mix app">
+                <div class="work__card mix backend">
                     <img src="assets/img/works/gameone.png" alt="" class="work__img">
                     <h3 class="work__title">Game One</h3>
                     <span class="work__button">Demo
@@ -569,7 +567,7 @@
                     </div>
                 </div>
 
-                <div class="work__card mix web">
+                <div class="work__card mix frontend">
                     <img src="assets/img/works/TheFiasco.png" alt="" class="work__img">
                     <h3 class="work__title">The Fiasco</h3>
                     <span class="work__button">Demo
@@ -589,7 +587,7 @@
                     </div>
                 </div>
 
-                <div class="work__card mix web">
+                <div class="work__card mix frontend">
                     <img src="assets/img/works/JaneDoe.png" alt="" class="work__img">
                     <h3 class="work__title">Jane Doe Portfolio</h3>
                     <span class="work__button">Demo
@@ -609,7 +607,7 @@
                     </div>
                 </div>
 
-                <div class="work__card mix git">
+                <div class="work__card mix fronend">
                     <img src="assets/img/works/git.png" alt="" class="work__img">
                     <h3 class="work__title">Git & Github</h3>
                     <span class="work__button">Demo
