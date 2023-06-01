@@ -12,7 +12,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Julien Lebron Portfolio</title>
+    <title>Portfolio de Julien LEBRON - Développeur Web & Formateur Full Stack</title>
+    <meta name="description"
+        content="Je conçois et réalise des sites web du cahier des charges à la mise en ligne. Je propose également mes services de formateur pour les écoles du web. Création de sites internet ergonomiques. Voici mon portfolio où vous retrouverez tous mes projets, ainsi qu'un formulaire pour me contacter.">
+    <meta name="author" content="JULIEN LEBRON">
+    <meta name="google-site-verification" content="UEBXnW8aGS0Zv7rKr3nrniTLtg-8-7b25Q9GJobVvrk" />
+    <meta name="author" content="Julien Lebron, julienlebron">
+    <meta name="Keywords"
+        content="portfolio, julienlebron, Referencement web, Julien Lebron, Developpeur web, Symfony, Développeur PHP, Mobile, Informatique, chef de projet Digital">
+    <meta name="Robots" content="all">
+    <meta property="og:title"
+        content="Gael MANZOLA étudiant et développeur web | Java | Mobile à Paris. Création de sites internet responsive.">
+    <meta property="og:type" content="Portfolio Julien LEBRON développeur web et formateur">
+    <meta property="og:url" content="https://www.julien-lebron.com">
+    <meta property="og:image" content="https://www.julien-lebron.com/favicon.ico">
     <!--========== UNICONS ==========-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
@@ -30,11 +43,14 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-X9TP2TETV7"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-X9TP2TETV7');
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-X9TP2TETV7');
 </script>
 
 <body>
@@ -469,8 +485,10 @@
             <div class="work__filters">
                 <span class="work__item active-work" data-filter="all">All</span>
                 <span class="work__item" data-filter=".web">HTML - CSS</span>
+                <span class="work__item" data-filter=".git">Git & Github</span>
                 <span class="work__item" data-filter=".app">PHP</span>
                 <span class="work__item" data-filter=".design">Symfony</span>
+                <span class="work__item" data-filter=".nft">NFT</span>
             </div>
 
             <div class="work__container container grid">
@@ -488,7 +506,8 @@
                             <li>Crée le - <span>25 avril 2023</span></li>
                             <li>Technologies - <span>Symfony</span></li>
                             <li>Role - <span>Full Stack</span></li>
-                            <li>Voir - <span><a href="#">www.domain.com</a></span></li>
+                            <li>Voir - <span><a href="https://khotel.julien-lebron.com"
+                                        target="_blank">www.khotel.julien-lebron.com</a></span></li>
                         </ul>
                     </div>
                 </div>
@@ -507,7 +526,7 @@
                             <li>Crée le - <span>5 mars 2023</span></li>
                             <li>Technologies - <span>Symfony</span></li>
                             <li>Role - <span>Full Stack</span></li>
-                            <li>Voir - <span><a href="#">www.domain.com</a></span></li>
+                            <!-- <li>Voir - <span><a href="#">www.domain.com</a></span></li> -->
                         </ul>
                     </div>
                 </div>
@@ -526,7 +545,7 @@
                             <li>Crée le - <span>10 janv 2023</span></li>
                             <li>Technologies - <span>Symfony</span></li>
                             <li>Role - <span>Full Stack</span></li>
-                            <li>Voir - <span><a href="#">www.domain.com</a></span></li>
+                            <!-- <li>Voir - <span><a href="#">www.domain.com</a></span></li> -->
                         </ul>
                     </div>
                 </div>
@@ -545,7 +564,7 @@
                             <li>Crée le - <span>20 décembre 2022</span></li>
                             <li>Technologies - <span>PHP</span></li>
                             <li>Role - <span>Full Stack</span></li>
-                            <li>Voir - <span><a href="#">www.domain.com</a></span></li>
+                            <!-- <li>Voir - <span><a href="#">www.domain.com</a></span></li> -->
                         </ul>
                     </div>
                 </div>
@@ -564,7 +583,8 @@
                             <li>Created - <span>20 juin 2021</span></li>
                             <li>Technologies - <span>HTML - CSS</span></li>
                             <li>Role - <span>Frontend</span></li>
-                            <li>Voir - <span><a href="#">www.domain.com</a></span></li>
+                            <li>Voir - <span><a href="https://thefiasco.julien-lebron.com"
+                                        target="_blank">www.thefiasco.julien-lebron.com</a></span></li>
                         </ul>
                     </div>
                 </div>
@@ -583,7 +603,48 @@
                             <li>Crée le - <span>10 avril 2021</span></li>
                             <li>Technologies - <span>HTML - CSS</span></li>
                             <li>Role - <span>Frontend</span></li>
-                            <li>Voir - <span><a href="#">www.domain.com</a></span></li>
+                            <li>Voir - <span><a href="https://janedoe.julien-lebron.com"
+                                        target="_blank">www.janedoe.julien-lebron.com</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work__card mix git">
+                    <img src="assets/img/works/git.png" alt="" class="work__img">
+                    <h3 class="work__title">Git & Github</h3>
+                    <span class="work__button">Demo
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">Développement Frontend</h3>
+                        <p class="details__description">Cours et exercice sur Git & Github</p>
+                        <ul class="details__info">
+                            <li>Crée le - <span>30 mai 2023</span></li>
+                            <li>Technologies - <span>HTML - CSS - Bootstrap</span></li>
+                            <li>Role - <span>Frontend</span></li>
+                            <li>Voir - <span><a href="https://git.julien-lebron.com"
+                                        target="_blank">www.git.julien-lebron.com</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work__card mix nft">
+                    <img src="assets/img/works/pug.jpg" alt="" class="work__img">
+                    <h3 class="work__title">Pug Factory</h3>
+                    <span class="work__button">Demo
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">Développement Backend</h3>
+                        <p class="details__description">Création d'une collection de NFT hébergée sur OpenSea. Le
+                            générateur utilise la technologie JavaScript. Le Design à été réalisé par Justine Waller.
+                        </p>
+                        <ul class="details__info">
+                            <li>Crée le - <span>22 avril 2022</span></li>
+                            <li>Technologies - <span>JavaScript</span></li>
+                            <li>Role - <span>Backend</span></li>
+                            <li>Voir - <span><a href="https://opensea.io/collection/pug-factory"
+                                        target="_blank">www.opensea.io/collection/pug-factory</a></span></li>
                         </ul>
                     </div>
                 </div>
@@ -596,7 +657,7 @@
                 <div class="portfolio__popup-content grid">
                     <span class="portfolio__popup-close"><i class="uil uil-times"></i></span>
                     <div class="pp__thumbnail">
-                        <img src="assets/img/work-2.webp" alt="" class="portfolio__popup-img">
+                        <img src="assets/img/works/blog.png" alt="" class="portfolio__popup-img">
                     </div>
                     <div class="portfolio__popup-info">
                         <div class="portfolio__popup-subtitle">Featured - <span>Design</span></div>
@@ -1196,12 +1257,12 @@
                             <span>Nom / Prénom</span>
                         </div>
                         <div class="input__container">
-                            <input type="email" class="input" name="email" id="email">
+                            <input type="email" class="input" name="email" id="email" autocomplete="off">
                             <label for="email">E-mail</label>
                             <span>E-mail</span>
                         </div>
                         <div class="input__container">
-                            <input type="tel" class="input" name="phone" id="phone">
+                            <input type="tel" class="input" name="phone" id="phone" autocomplete="off">
                             <label for="phone">Téléphone</label>
                             <span>Télephone</span>
                         </div>
@@ -1222,17 +1283,17 @@
 
 
 
-    </div>
-    
-    <!--===== FOOTER =====-->
-    <footer class="footer">
+        </div>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
             <div class="footer__bg">
                 <div class="footer__container container grid">
                     <div>
                         <h2 class="footer__title">Julien Lebron</h2>
                         <span class="footer__subtitle">Développeur Full Stack et Formateur</span>
                     </div>
-                    
+
                     <ul class="footer__links">
                         <li>
                             <a href="#services" class="footer__link">Services</a>
@@ -1244,7 +1305,7 @@
                             <a href="#contact" class="footer__link">Contact</a>
                         </li>
                     </ul>
-                    
+
                     <div class="footer__socials">
                         <a href="#home" class="footer__social">
                             <i class="uil uil-estate"></i>
@@ -1256,17 +1317,17 @@
                             <i class="uil uil-instagram"></i>
                         </a>
                         <a href="https://www.linkedin.com/in/julien-lebron-24b154162/" target="_blank"
-                        class="footer__social">
-                        <i class="uil uil-linkedin"></i>
-                    </a>
+                            class="footer__social">
+                            <i class="uil uil-linkedin"></i>
+                        </a>
                     </div>
                 </div>
-                
+
                 <p class="footer__copy">&#169; Julien Lebron. Tous Droits Réservés</p>
             </div>
         </footer>
     </main>
-    
+
     <!--===== COOKIE =====-->
     <?php
         if(!isset($_COOKIE['portfolio']))
@@ -1288,14 +1349,14 @@
     ?>
 
     <!--========== SCROLL UP ==========-->
-    
-    
+
+
     <!--========== MIXITUP FILTER ==========-->
     <script src="assets/js/mixitup.min.js"></script>
-    
+
     <!--========== SWIPER JS ==========-->
     <script src="assets/js/swiper-bundle.min.js"></script>
-    
+
     <!--========== MAIN JS ==========-->
     <script src="assets/js/main.js"></script>
 </body>

@@ -4,8 +4,6 @@ const navMenu = document.getElementById('sidebar'),
       navClose = document.getElementById('nav-close'),
       navLinks = document.querySelectorAll('.nav__link')
 
-console.log(navLinks);
-
 /*===== SIDEBAR SHOW =====*/
 /* Validate If Constant Exists */
 if(navToggle) {
