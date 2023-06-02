@@ -5,7 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Julien Lebron Portfolio</title>
+    <title>Portfolio de Julien LEBRON - Développeur Web & Formateur Full Stack - Mentions Légales</title>
+    <meta name="description"
+        content="Je conçois et réalise des sites web du cahier des charges à la mise en ligne. Je propose également mes services de formateur pour les écoles du web. Création de sites internet ergonomiques. Voici mon portfolio où vous retrouverez tous mes projets, ainsi qu'un formulaire pour me contacter.">
+    <meta name="author" content="JULIEN LEBRON">
+    <meta name="google-site-verification" content="UEBXnW8aGS0Zv7rKr3nrniTLtg-8-7b25Q9GJobVvrk" />
+    <meta name="author" content="Julien Lebron, julienlebron">
+    <meta name="Keywords"
+        content="portfolio, julienlebron, Referencement web, Julien Lebron, Developpeur web, Symfony, Développeur PHP, Mobile, Informatique, chef de projet Digital">
+    <meta name="Robots" content="all">
+    <meta property="og:title"
+        content="Julien LEBRON développeur web et formateur | PHP | Mobile à Bruxelles. Création de sites internet responsive.">
+    <meta property="og:type" content="Portfolio Julien LEBRON développeur web et formateur">
+    <meta property="og:url" content="https://www.julien-lebron.com">
+    <meta property="og:image" content="https://www.julien-lebron.com/favicon.ico">
     <!--========== UNICONS ==========-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 

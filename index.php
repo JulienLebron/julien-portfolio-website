@@ -107,14 +107,14 @@
                 <div class="home__social">
                     <span class="home__social-follow">Me Suivre</span>
                     <div class="home__social-links">
-                        <a href="https://github.com/JulienLebron" target="_blank" class="home__social-link">
+                        <a href="https://github.com/JulienLebron" target="_blank" class="home__social-link" rel="nofollow">
                             <i class="uil uil-github"></i>
                         </a>
-                        <a href="https://www.instagram.com/julien_lebron/" target="_blank" class="home__social-link">
+                        <a href="https://www.instagram.com/julien_lebron/" target="_blank" class="home__social-link" rel="nofollow">
                             <i class="uil uil-instagram"></i>
                         </a>
                         <a href="https://www.linkedin.com/in/julien-lebron-24b154162/" target="_blank"
-                            class="home__social-link">
+                            class="home__social-link" rel="nofollow">
                             <i class="uil uil-linkedin"></i>
                         </a>
                     </div>
@@ -491,7 +491,7 @@
 
             <div class="work__container container grid">
                 <div class="work__card mix backend">
-                    <img src="assets/img/works/hotel-k.png" alt="" class="work__img">
+                    <img src="assets/img/works/hotel-k.png" alt="Screen du site K Hôtel par Julien Lebron" class="work__img">
                     <h3 class="work__title">Hôtel K</h3>
                     <span class="work__button">Demo
                         <i class="uil uil-arrow-right work__button-icon"></i>
@@ -511,7 +511,7 @@
                 </div>
 
                 <div class="work__card mix backend">
-                    <img src="assets/img/works/myshop.png" alt="" class="work__img">
+                    <img src="assets/img/works/myshop.png" alt="Screen du site MyShop réalisé par Julien Lebron" class="work__img">
                     <h3 class="work__title">MyShop</h3>
                     <span class="work__button">Demo
                         <i class="uil uil-arrow-right work__button-icon"></i>
@@ -530,7 +530,7 @@
                 </div>
 
                 <div class="work__card mix backend">
-                    <img src="assets/img/works/bestcar.png" alt="" class="work__img">
+                    <img src="assets/img/works/bestcar.png" alt="Screen du site BestCar réalisé par Julien Lebron" class="work__img">
                     <h3 class="work__title">Best Cars</h3>
                     <span class="work__button">Demo
                         <i class="uil uil-arrow-right work__button-icon"></i>
@@ -549,7 +549,7 @@
                 </div>
 
                 <div class="work__card mix backend">
-                    <img src="assets/img/works/gameone.png" alt="" class="work__img">
+                    <img src="assets/img/works/gameone.png" alt="Screen du site Game One réalisé par Julien Lebron" class="work__img">
                     <h3 class="work__title">Game One</h3>
                     <span class="work__button">Demo
                         <i class="uil uil-arrow-right work__button-icon"></i>
@@ -568,7 +568,7 @@
                 </div>
 
                 <div class="work__card mix frontend">
-                    <img src="assets/img/works/TheFiasco.png" alt="" class="work__img">
+                    <img src="assets/img/works/TheFiasco.png" alt="Screen du site The Fiasco réalisé par Julien Lebron" class="work__img">
                     <h3 class="work__title">The Fiasco</h3>
                     <span class="work__button">Demo
                         <i class="uil uil-arrow-right work__button-icon"></i>
@@ -582,13 +582,13 @@
                             <li>Technologies - <span>HTML - CSS</span></li>
                             <li>Role - <span>Frontend</span></li>
                             <li>Voir - <span><a href="https://thefiasco.julien-lebron.com"
-                                        target="_blank">www.thefiasco.julien-lebron.com</a></span></li>
+                                        target="_blank" rel="nofollow">www.thefiasco.julien-lebron.com</a></span></li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="work__card mix frontend">
-                    <img src="assets/img/works/JaneDoe.png" alt="" class="work__img">
+                    <img src="assets/img/works/JaneDoe.png" alt="Screen du site JaneDoe réalisé par Julien Lebron" class="work__img">
                     <h3 class="work__title">Jane Doe Portfolio</h3>
                     <span class="work__button">Demo
                         <i class="uil uil-arrow-right work__button-icon"></i>
@@ -602,13 +602,13 @@
                             <li>Technologies - <span>HTML - CSS</span></li>
                             <li>Role - <span>Frontend</span></li>
                             <li>Voir - <span><a href="https://janedoe.julien-lebron.com"
-                                        target="_blank">www.janedoe.julien-lebron.com</a></span></li>
+                                        target="_blank" rel="nofollow">www.janedoe.julien-lebron.com</a></span></li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="work__card mix fronend">
-                    <img src="assets/img/works/git.png" alt="" class="work__img">
+                    <img src="assets/img/works/git.png" alt="Screen du site git & github réalisé par Julien Lebron" class="work__img">
                     <h3 class="work__title">Git & Github</h3>
                     <span class="work__button">Demo
                         <i class="uil uil-arrow-right work__button-icon"></i>
@@ -621,13 +621,13 @@
                             <li>Technologies - <span>HTML - CSS - Bootstrap</span></li>
                             <li>Role - <span>Frontend</span></li>
                             <li>Voir - <span><a href="https://git.julien-lebron.com"
-                                        target="_blank">www.git.julien-lebron.com</a></span></li>
+                                        target="_blank" rel="nofollow">www.git.julien-lebron.com</a></span></li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="work__card mix nft">
-                    <img src="assets/img/works/pug.jpg" alt="" class="work__img">
+                    <img src="assets/img/works/pug.jpg" alt="image de la collection NFT PugFactory" class="work__img">
                     <h3 class="work__title">Pug Factory</h3>
                     <span class="work__button">Demo
                         <i class="uil uil-arrow-right work__button-icon"></i>
@@ -642,7 +642,7 @@
                             <li>Technologies - <span>JavaScript</span></li>
                             <li>Role - <span>Backend</span></li>
                             <li>Voir - <span><a href="https://opensea.io/collection/pug-factory"
-                                        target="_blank">www.opensea.io/collection/pug-factory</a></span></li>
+                                        target="_blank" rel="nofollow">www.opensea.io/collection/pug-factory</a></span></li>
                         </ul>
                     </div>
                 </div>
@@ -840,7 +840,7 @@
                             merci Julien pour m'aider à réaliser mon première projet en php.</p>
                         <h3 class="testimonial__date">7 dévrier 2023</h3>
                         <div class="testimonial__profile">
-                            <img src="assets/img/testimonials/caroline.jpg" alt="" class="testimonial__profile-img">
+                            <img src="assets/img/testimonials/caroline.jpg" alt="photo de Caroline Al Salloum" class="testimonial__profile-img">
 
                             <div class="testimonial__profile-data">
                                 <span class="testimonial__profile-name">Caroline Al Salloum</span>
@@ -859,7 +859,7 @@
                             et sa sociabilité. Je recommande Julien lebron.</p>
                         <h3 class="testimonial__date">8 janvier 2023</h3>
                         <div class="testimonial__profile">
-                            <img src="assets/img/testimonials/pierre-alexandre.jpg" alt=""
+                            <img src="assets/img/testimonials/pierre-alexandre.jpg" alt="photo de Pierre-Alexandre Detollenaere"
                                 class="testimonial__profile-img">
 
                             <div class="testimonial__profile-data">
@@ -878,7 +878,7 @@
                             très serviable....</p>
                         <h3 class="testimonial__date">March 27. 2020</h3>
                         <div class="testimonial__profile">
-                            <img src="assets/img/testimonials/imane.jpg" alt="" class="testimonial__profile-img">
+                            <img src="assets/img/testimonials/imane.jpg" alt="photo de Imane El Kaddouri" class="testimonial__profile-img">
 
                             <div class="testimonial__profile-data">
                                 <span class="testimonial__profile-name">Imane El Kaddouri</span>
@@ -896,7 +896,7 @@
                             remercie.</p>
                         <h3 class="testimonial__date">7 février 2023</h3>
                         <div class="testimonial__profile">
-                            <img src="assets/img/testimonials/sidi.jpg" alt="" class="testimonial__profile-img">
+                            <img src="assets/img/testimonials/sidi.jpg" alt="photo de Sidi Daoudi" class="testimonial__profile-img">
 
                             <div class="testimonial__profile-data">
                                 <span class="testimonial__profile-name">Sidi Daoudi</span>
@@ -916,11 +916,43 @@
                             l'enseignement reflète sa bonne connaissance du domaine. Vivement recommandé !</p>
                         <h3 class="testimonial__date">6 avril 2022</h3>
                         <div class="testimonial__profile">
-                            <img src="assets/img/testimonials/corentin.jpg" alt="" class="testimonial__profile-img">
+                            <img src="assets/img/testimonials/corentin.jpg" alt="photo de Corentin Esteve" class="testimonial__profile-img">
 
                             <div class="testimonial__profile-data">
                                 <span class="testimonial__profile-name">Corentin Esteve</span>
                                 <span class="testimonial__profile-detail">Développeur Front-End, UX/UI Designer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <div class="testimonial__quote">
+                            <i class="bx bxs-quote-alt-left"></i>
+                        </div>
+                        <p class="testimonial__description">Julien a su nous transmettre de précieuses connaissance pour effectuer le métier de développeur de manière confiante et professionnel , il a également su nous montrer son empathie en nous répétant que l’ont pouvais franchir plusieurs palier en donnant des efforts , j’ai apprécier son écoute et ses conseils</p>
+                        <h3 class="testimonial__date">29 novembre 2022</h3>
+                        <div class="testimonial__profile">
+                            <img src="assets/img/testimonials/ibrahima.jpg" alt="photo de Ibrahima Fofana" class="testimonial__profile-img">
+
+                            <div class="testimonial__profile-data">
+                                <span class="testimonial__profile-name">Ibrahima Fofana</span>
+                                <span class="testimonial__profile-detail">Développeur Web</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <div class="testimonial__quote">
+                            <i class="bx bxs-quote-alt-left"></i>
+                        </div>
+                        <p class="testimonial__description">J’ai eu l’occasion d’être formée par Julien sur plusieurs semaines et différents sujets (HTML/CSS, PHP). C’est un très bon formateur qui fait preuve de pédagogie et de beaucoup de patience. Merci pour tout Julien ! </p>
+                        <h3 class="testimonial__date">6 avril 2022</h3>
+                        <div class="testimonial__profile">
+                            <img src="assets/img/testimonials/margaux.jpg" alt="photo de Margaux Diaz" class="testimonial__profile-img">
+
+                            <div class="testimonial__profile-data">
+                                <span class="testimonial__profile-name">Margaux Diaz</span>
+                                <span class="testimonial__profile-detail">Barista</span>
                             </div>
                         </div>
                     </div>
@@ -1308,14 +1340,14 @@
                         <a href="#home" class="footer__social">
                             <i class="uil uil-estate"></i>
                         </a>
-                        <a href="https://github.com/JulienLebron" target="_blank" class="footer__social">
+                        <a href="https://github.com/JulienLebron" target="_blank" class="footer__social" rel="nofollow">
                             <i class="uil uil-github"></i>
                         </a>
-                        <a href="https://www.instagram.com/julien_lebron/" target="_blank" class="footer__social">
+                        <a href="https://www.instagram.com/julien_lebron/" target="_blank" class="footer__social" rel="nofollow">
                             <i class="uil uil-instagram"></i>
                         </a>
                         <a href="https://www.linkedin.com/in/julien-lebron-24b154162/" target="_blank"
-                            class="footer__social">
+                            class="footer__social" rel="nofollow">
                             <i class="uil uil-linkedin"></i>
                         </a>
                     </div>

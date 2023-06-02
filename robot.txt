@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /contact.php
+
+Sitemap: https://julien-lebron.com/sitemap.xml
