@@ -165,6 +165,7 @@ input[type='checkbox'] {
     position: fixed;
     right: -0.5rem;
     top: 2rem;
+    padding: 0.5rem;
     width: 220px;
     border: 1px solid var(--box-color);
     background-color: var(--box-color);
@@ -196,6 +197,7 @@ input[type='checkbox'] {
 
 .style__switcher-toggler {
     top: 7%;
+    margin-bottom: 1rem;
 }
 
 .style__switcher-theme {
@@ -238,6 +240,7 @@ input[type='checkbox'] {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: .5rem;
+    margin-right: 1rem;
 }
 
 .style__switcher-colors .color {
@@ -1675,6 +1678,10 @@ textarea.input {
 
     .work__container {
         grid-template-columns: 330px;
+    }
+
+    .portfolio__popup.open {
+        z-index: 1100;
     }
 
     .services__container {
