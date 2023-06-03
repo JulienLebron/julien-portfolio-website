@@ -31,6 +31,9 @@
 
     <!--========== BOXICONS ==========-->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!--========== FONTAWESOME ==========-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!--========== SWIPER CSS ==========-->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
@@ -54,6 +57,43 @@
 </script>
 
 <body>
+    <!--========== STYLE SWITCHER ==========-->
+    <input type="radio" name="color" id="color-1">
+    <input type="radio" name="color" id="color-2">
+    <input type="radio" name="color" id="color-3">
+    <input type="radio" name="color" id="color-4">
+    <input type="radio" name="color" id="color-5">
+    <input type="radio" name="color" id="color-6">
+    <input type="radio" name="color" id="color-7">
+    <input type="radio" name="color" id="color-8">
+    <input type="radio" name="color" id="color-9">
+    <input type="radio" name="color" id="color-10">
+    <input type="checkbox" id="toggler">
+    <input type="checkbox" id="day-night">
+
+    <div class="style__switcher">
+        <label for="toggler" class="style__switcher-toggler">
+            <i class="fa-solid fa-gear fa-spin"></i>
+        </label>
+        <label for="day-night" class="style__switcher-theme">
+            <i class="fa-solid fa-sun"></i>
+            <i class="fa-solid fa-moon"></i>
+        </label>
+
+        <h3 class="style__switcher-title">Theme Colors</h3>
+        <div class="style__switcher-colors">
+            <label for="color-1" class="color-1 color"></label>
+            <label for="color-2" class="color-2 color"></label>
+            <label for="color-3" class="color-3 color"></label>
+            <label for="color-4" class="color-4 color"></label>
+            <label for="color-5" class="color-5 color"></label>
+            <label for="color-6" class="color-6 color"></label>
+            <label for="color-7" class="color-7 color"></label>
+            <label for="color-8" class="color-8 color"></label>
+            <label for="color-9" class="color-9 color"></label>
+            <label for="color-10" class="color-10 color"></label>
+        </div>
+    </div>
     <!--========== SIDEBAR ==========-->
     <div class="nav__toggle" id="nav-toggle">
         <i class="uil uil-bars"></i>
@@ -90,9 +130,9 @@
                     </ul>
                 </div>
             </div>
-            <div class="btn__share">
+            <!-- <div class="btn__share">
                 <i class="uil uil-share-alt social__share"></i>
-            </div>
+            </div> -->
 
             <div class="nav__close" id="nav-close">
                 <i class="uil uil-times"></i>
@@ -120,7 +160,8 @@
                     </div>
                 </div>
 
-                <img src="assets/img/about/about-normal.png" alt="" class="home__img">
+                <img src="assets/img/about/about__normal-dark.png" alt="" class="home__img moon">
+                <img src="assets/img/about/about__normal-sun.png" alt="" class="home__img sun">
 
                 <div class="home__data">
                     <h1 class="home__title">Julien Lebron</h1>
@@ -168,7 +209,8 @@
             <h2 data-heading="Introduction" class="section__title">À Propos De Moi</h2>
 
             <div class="about__container container grid">
-                <img src="assets/img/about/about-normal.png" alt="" class="about__img">
+                <img src="assets/img/about/about__normal-dark.png" alt="photo de julien lebron" class="about__img moon">
+                <img src="assets/img/about/about__normal-sun.png" alt="photo de julien lebron" class="about__img sun">
 
                 <div class="about__data">
                     <h3 class="about__heading">Bonjour, Je suis Julien, Basé à Bruxelles</h3>
