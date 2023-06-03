@@ -6,10 +6,12 @@
     $mj = new \Mailjet\Client(API_PUBLIC_KEY, API_PRIVATE_KEY,true,['version' => 'v3.1']);
 
 
-    if(!empty($_POST['surname']) && !empty($_POST['email']) && !empty($_POST['message'])){
+    if(!empty($_POST['surname']) && !empty($_POST['email']) && !empty($_POST['message']) && !empty($_POST['type']) && !empty($_POST['phone'])){
         $surname = htmlspecialchars($_POST['surname']);
         $phone = htmlspecialchars($_POST['phone']);
         $email = htmlspecialchars($_POST['email']);
+        $site = htmlspecialchars($_POST['site']);
+        $type = htmlspecialchars($_POST['type']);
         $message = htmlspecialchars($_POST['message']);
 
         if(filter_var($email, FILTER_VALIDATE_EMAIL)){
@@ -27,7 +29,7 @@
                     ]
                     ],
                     'Subject' => "Demande de renseignement",
-                    'HTMLPart' => "<h3>$surname</h3><h4>$email</h4><h4>$phone</h4><p>$message</p>"
+                    'HTMLPart' => "<h3>Nom / Prénom : $surname</h3> <h4>Adresse E-mail : $email</h4><h4>Numéro de téléphone : $phone</h4><h4>Type de projet : $type</h4><h4>Site Actuel : $site</h4><h5>$message</h5>"
                 ]
                 ]
             ];
@@ -71,6 +73,11 @@
 
     <!--========== BOXICONS ==========-->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!--========== FONTAWESOME ==========-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!--========== SWIPER CSS ==========-->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
@@ -83,14 +90,54 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-X9TP2TETV7"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-X9TP2TETV7');
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-X9TP2TETV7');
 </script>
 
 <body>
+    <!--========== STYLE SWITCHER ==========-->
+    <input type="radio" name="color" id="color-1">
+    <input type="radio" name="color" id="color-2">
+    <input type="radio" name="color" id="color-3">
+    <input type="radio" name="color" id="color-4">
+    <input type="radio" name="color" id="color-5">
+    <input type="radio" name="color" id="color-6">
+    <input type="radio" name="color" id="color-7">
+    <input type="radio" name="color" id="color-8">
+    <input type="radio" name="color" id="color-9">
+    <input type="radio" name="color" id="color-10">
+    <input type="checkbox" id="toggler">
+    <input type="checkbox" id="day-night">
+
+    <div class="style__switcher">
+        <label for="toggler" class="style__switcher-toggler">
+            <i class="fa-solid fa-gear fa-spin"></i>
+        </label>
+        <label for="day-night" class="style__switcher-theme">
+            <i class="fa-solid fa-sun"></i>
+            <i class="fa-solid fa-moon"></i>
+        </label>
+
+        <h3 class="style__switcher-title">Theme Colors</h3>
+        <div class="style__switcher-colors">
+            <label for="color-1" class="color-1 color"></label>
+            <label for="color-2" class="color-2 color"></label>
+            <label for="color-3" class="color-3 color"></label>
+            <label for="color-4" class="color-4 color"></label>
+            <label for="color-5" class="color-5 color"></label>
+            <label for="color-6" class="color-6 color"></label>
+            <label for="color-7" class="color-7 color"></label>
+            <label for="color-8" class="color-8 color"></label>
+            <label for="color-9" class="color-9 color"></label>
+            <label for="color-10" class="color-10 color"></label>
+        </div>
+    </div>
     <!--========== SIDEBAR ==========-->
     <div class="nav__toggle" id="nav-toggle">
         <i class="uil uil-bars"></i>
@@ -140,7 +187,8 @@
     <main class="main contact__page">
         <div class="center">
 
-            <img src="assets/img/about/about-normal.png" alt="" class="about__img">
+            <img src="assets/img/about/about__normal-dark.png" alt="photo de julien lebron" class="home__img moon">
+            <img src="assets/img/about/about__normal-sun.png" alt="photo de julien lebron" class="home__img sun">
             <?php
             if(!empty($success))
             {
