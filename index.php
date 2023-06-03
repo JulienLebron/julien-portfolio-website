@@ -667,7 +667,7 @@
                                 <li>Created - <span>4 dec 2020</span></li>
                                 <li>Technologies - <span>html css</span></li>
                                 <li>Role - <span>frontend</span></li>
-                                <li>View - <span><a href="#">www.domain.com</a></span></li>
+                                <li>View - <span><a href="https://julien-lebron.com">www.domain.com</a></span></li>
                             </ul>
                         </div>
                     </div>
@@ -995,11 +995,6 @@
                                 </li>
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p class="services__modal-info">Domaine + hébergement
-                                        + e-mail pendant 12 mois</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
                                     <p class="services__modal-info">Interface administrateur
                                         STANDARD</p>
                                 </li>
@@ -1068,11 +1063,6 @@
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
                                     <p class="services__modal-info">Proposition de logo</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p class="services__modal-info">Domaine + hébergement
-                                        + e-mail pendant 12 mois</p>
                                 </li>
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
@@ -1145,11 +1135,6 @@
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
                                     <p class="services__modal-info">Proposition de logo</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p class="services__modal-info">Domaine + hébergement
-                                        + e-mail pendant 12 mois</p>
                                 </li>
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
