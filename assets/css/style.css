@@ -1382,6 +1382,14 @@ textarea.input {
     text-decoration: underline;
 }
 
+.cookie__text {
+    color: #fff;
+}
+
+#day-night:checked ~ * .cookie__text {
+    color: var(--text-color);
+}
+
 /*=============== FOOTER ===============*/
 .footer {
     padding-top: 2rem;
