@@ -700,6 +700,26 @@
                     </div>
                 </div>
 
+                <div class="work__card mix frontend">
+                    <img src="assets/img/works/scrum__preview.png" alt="screenshot du site SCRUM réalisé par Julien Lebron" class="work__img">
+                    <h3 class="work__title">SCRUM</h3>
+                    <span class="work__button">Demo
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">Développement Frontend</h3>
+                        <p class="details__description">Création d'un site consacré à la méthode Agile SCRUM. Familiarisez-vous avec les notions de base et les rôles de la méthodologie SCRUM.
+                        </p>
+                        <ul class="details__info">
+                            <li>Crée le - <span>4 juin 2023</span></li>
+                            <li>Technologies - <span>HTML - CSS - Bootstrap</span></li>
+                            <li>Role - <span>Frontend</span></li>
+                            <li>Voir - <span><a href="https://scrum.julien-lebron.com" target="_blank"
+                                        rel="nofollow">www.scrum.julien-lebron.com</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </section>
         <!-- Portfolio Popup -->

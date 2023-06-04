@@ -186,9 +186,7 @@
     <!--========== MAIN ==========-->
     <main class="main contact__page">
         <div class="center">
-
-            <img src="assets/img/about/about__normal-dark.png" alt="photo de julien lebron" class="home__img moon">
-            <img src="assets/img/about/about__normal-sun.png" alt="photo de julien lebron" class="home__img sun">
+            <i class="fa-regular fa-envelope fa-bounce letter__contact-icon"></i>
             <?php
             if(!empty($success))
             {

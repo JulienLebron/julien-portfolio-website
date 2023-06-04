@@ -873,7 +873,7 @@ input[type='checkbox'] {
 /* Active Item Work */
 .active-work {
     background-color: var(--skin-color);
-    color: var(--title-color);
+    color: #fff;
 }
 
 /* Portfolio Popup */
@@ -1505,6 +1505,11 @@ textarea.input {
     margin-top: 5rem;
 }
 
+/*=============== Contact Page ===============*/
+.letter__contact-icon {
+    font-size: 10rem;
+}
+
 
 
 /*=============== SCROLL UP ===============*/
@@ -1728,6 +1733,10 @@ textarea.input {
     }
 
     .portfolio__popup.open {
+        z-index: 1100;
+    }
+
+    .active-modal {
         z-index: 1100;
     }
 
