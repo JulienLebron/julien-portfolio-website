@@ -1362,19 +1362,19 @@
 
                             <h3 class="contact__title">Vos Coordonnées</h3>
                             <div class="input__container">
-                                <input type="text" class="input" name="surname" id="surname">
-                                <label for="surname">Nom / Prénom</label>
+                                <input type="text" class="input" name="surname" id="surname" required>
+                                <label for="surname">Nom / Prénom *</label>
                                 <span>Nom / Prénom</span>
                             </div>
                             <div class="input__container">
-                                <input type="email" class="input" name="email" id="email" autocomplete="off">
-                                <label for="email">E-mail</label>
-                                <span>E-mail</span>
+                                <input type="email" class="input" name="email" id="email" autocomplete="off" required>
+                                <label for="email">E-mail *</label>
+                                <span>E-mail *</span>
                             </div>
                             <div class="input__container">
-                                <input type="tel" class="input" name="phone" id="phone" autocomplete="off">
-                                <label for="phone">Téléphone</label>
-                                <span>Télephone</span>
+                                <input type="tel" class="input" name="phone" id="phone" autocomplete="off" required>
+                                <label for="phone">Téléphone *</label>
+                                <span>Télephone *</span>
                             </div>
                             <div class="input__container">
                                 <input type="text" class="input" name="site" id="site" autocomplete="off">
@@ -1392,13 +1392,21 @@
 
                             <h3 class="contact__title">Votre Projet</h3>
                             <div class="input__container">
-                                <input type="text" class="input" name="type" id="type" autocomplete="off">
-                                <label for="type">Type de projet</label>
+                                <!-- <input type="text" class="input" name="type" id="type" autocomplete="off" required> -->
+                                <select class="input" type="text" name="type" id="type" autocomplete="off" required>
+                                    <option value=""></option>
+                                    <option value="standard">Site Vitrine [Standard]</option>
+                                    <option value="personnalise">Site Vitrine [Personnalisé]</option>
+                                    <option value="ecommerce">Plateforme e-commerce</option>
+                                    <option value="formation">Formation</option>
+                                    <option value="autre">Autre</option>
+                                </select>
+                                <label for="type">Type de projet *</label>
                                 <span>Type de projet</span>
                             </div>
                             <div class="input__container textarea">
-                                <textarea name="message" id="message" class="input"></textarea>
-                                <label for="message">Description de votre projet</label>
+                                <textarea name="message" id="message" class="input" required></textarea>
+                                <label for="message">Description de votre projet *</label>
                                 <span>Description de votre projet</span>
                             </div>
                             <button type="submit" target="_blank" class="button"><i
